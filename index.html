@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Máquina de vendas - Lourenço Sequeira</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <!--Título-->
+      <h1>Máquina de Vendas</h1>
+
+  <table class="tabelainf">
+    <tr>
+      <!--Região do país-->
+      <th>Região do país:</th>
+      <th>
+        <input type="radio" id="localização" name="localização" value="continente">
+        <label for="continente">Continente</label>
+        <br>
+        <input type="radio" id="localização1" name="localização" value="madeira">
+        <label for="madeira">Madeira</label>
+        <br>
+        <input type="radio" id="localização2" name="localização" value="açores">
+        <label for="açores">Açores</label>
+      </th>
+    </tr>
+
+    <!--Saldo em carteira-->
+    <tr>
+      <th>Saldo em carteira:</th>
+      <th><div id="saldocart" class="output"></div></th>
+    </tr>
+
+    <!--Carregamento da carteira--> 
+    <tr>
+      <th>Carregar carteira:</th> 
+      <th>
+        <button type="button" onclick="atualizarcart(0.10)" id="dinheiro1" class="buttoncarregar">0,10€
+        </button>
+        <button type="button" onclick="atualizarcart(0.20)" id="dinheiro2" class="buttoncarregar">0,20€
+        </button>
+        <button type="button" onclick="atualizarcart(0.50)" id="dinheiro3" class="buttoncarregar">0,50€
+        </button>
+        <button type="button" onclick="atualizarcart(1)" id="dinheiro4" class="buttoncarregar">1,00€
+        </button>
+        <button type="button" onclick="atualizarcart(2)" id="dinheiro5" class="buttoncarregar">2,00€
+        </button>
+      </th>
+    </tr>
+   </table>
+
+  <!--Máquina de vendas-->
+     <table class="tabelaprodutos">
+       <tr>
+         <th colspan="2" style="font-size: 20px;">Preçário (sem IVA incluído):
+           <br>
+          Água - 1,00€;
+          Tisana - 1,20€;
+          Refrigerante - 1,50€
+         </th>
+         <th colspan="2">
+           <button type="button" onclick="comprarprod()" id="bcomprarp" class="abastecer">Comprar produto:
+         </th>
+         <th colspan="2"><button type="button" onclick="abasteceralea()" id="babastecera" class="abastecer">Abastecer máquina aleatoriamente
+         </th>
+         <th colspan="2"><button type="button" onclick="bebidasurpresa()" id="bsurpresa" class="abastecer">Bebida surpresa (2,00€)
+         </th>
+         <th colspan="2"><button type="button" onclick="pancada()" id="bpancada" class="abastecer">Dar pancada na máquina
+            </th>
+       </tr>
+       <tr>
+         <th id="1"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+         <th id="2"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+         <th id="3"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+         <th id="4"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+         <th id="5"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+         <th id="6"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+         <th id="7"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+         <th id="8"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+         <th id="9"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+         <th id="10"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+      </tr>
+       <tr>
+          <th id="11"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="12"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="13"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="14"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="15"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="16"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="17"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="18"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="19"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="20"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+       </tr>
+       <tr>
+          <th id="21"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="22"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="23"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="24"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="25"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="26"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="27"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="28"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="29"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="30"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+       </tr>
+       <tr>
+          <th id="31"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="32"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="33"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="34"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="35"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="36"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="37"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="38"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="39"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="40"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+       </tr>
+       <tr>
+          <th id="41"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="42"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="43"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="44"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="45"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="46"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="47"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="48"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="49"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="50"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+       </tr>
+       <tr>
+          <th id="51"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="52"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="53"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="54"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="55"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="56"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="57"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="58"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="59"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+          <th id="60"><img id="" src="Imagens/Pixel.jpg" alt="Pixel"></th>
+       </tr>
+
+     </table>
+
+    <div id="recibo"></div>
+
+  <table class="tabelareg">
+    <tr>
+      <th style="font-weight: bolder;" colspan="2">Registo de vendas:</th>
+    </tr>
+      <tr>
+        <th colspan="2">
+          <div id="registovendas" class="output">
+        </th>
+      </tr>
+  </table>
+
+  <canvas id="estatistica" class="tabelaestatistica"></div>
+  
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
