@@ -1,105 +1,116 @@
 h1 {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
-  }
-  
-  div {
-    text-align: center;
-    margin-top: 5%;
-    font-size: 40px;
-  }
-  
-  .output {
-    text-align: center;
-    margin-top: 1%;
-    font-size: 25px;
-  }
-  
-  .tabelaprodutos {
-      border-collapse: collapse;
-      border: 2px solid black;
-      font-size: 25px;
-      width: 80%;
-      margin-left: 10%;
-      margin-top: 5%;
-      background-color: white;
-  
-  }
-  
-  .tabelaestatistica {
-    width:80%;
-    margin-top: 5%;
-  }
-  
-  th {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+div {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 40px;
+}
+
+.output {
+  text-align: center;
+  margin-top: 1%;
+  font-size: 25px;
+}
+
+.tabelaprodutos {
     border-collapse: collapse;
     border: 2px solid black;
-    padding: 8 px;
-    font-weight: lighter;
-    width: 8%;
-    height: 80px;
-  
-  }
-  
-  .tabelainf, .tabelareg {
-    margin-top: 5%;
-    border-collapse: collapse;
-    border: 2px solid black;
-    border-radius: 8px;
-    background-color: white;
-    width: 68%;
-    margin-left: 16%;
     font-size: 25px;
-  }
-  
-  img {
-    width: 40%;
-    height: 35px;
-  }
-  
-  .moeda {
-    width: 10%;
-    height: 20px;
-  }
-  
-  label,
-  input {
-    text-align: center;
-    padding: 2%;
-  }
-  
-  .buttoncarregar {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
     background-color: white;
-    color: black;
-    font-size: 16px;
-    border-radius: 8px;
-    padding: 2%;
-  }
-  
-  .abastecer {
-    font-weight: bolder;
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    padding: 2%;
-    border-radius: 8px;
-  }
-  
-  .infcliente {
-    font-weight: bolder;
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    padding: 2%;
-    border-radius: 8px;
-  }
-  
-  .buttonregistovendas {
-    font-weight: bolder;
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 8px;
-  }
+
+}
+
+.tabelaestatistica {
+  width:80%;
+  margin-top: 5%;
+}
+
+th {
+  border-collapse: collapse;
+  border: 2px solid black;
+  padding: 8 px;
+  font-weight: lighter;
+  width: 8%;
+  height: 80px;
+
+}
+
+.tabelainf, .tabelareg {
+  margin-top: 5%;
+  border-collapse: collapse;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: white;
+  width: 68%;
+  margin-left: 16%;
+  font-size: 25px;
+}
+
+img {
+  width: 40%;
+  height: 35px;
+}
+
+.moeda {
+  width: 10%;
+  height: 20px;
+}
+
+label,
+input {
+  text-align: center;
+  padding: 2%;
+}
+
+.buttoncarregar {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 2%;
+}
+
+.abastecer {
+  font-weight: bolder;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.imprimir {
+  font-weight: bolder;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  border-radius: 8px;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+.infcliente {
+  font-weight: bolder;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.buttonregistovendas {
+  font-weight: bolder;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+}
